@@ -7,7 +7,7 @@ void draw()
 {
   background(255);
   translate(width/2,height/2);
-  Saat(100);
+  Saat(200);
   
 }
 
@@ -29,7 +29,7 @@ void Saat(float boyut)
     text(i,n.x,n.y);
   }
   
-  Kol((hour() - 12) * 30,0.6,h);
+  Kol((hour() + minute()/60.0) * 30,0.6,h);
   Kol(minute() * 6,0.8,h);
   Kol(second() * 6,0.9,h);
 }
