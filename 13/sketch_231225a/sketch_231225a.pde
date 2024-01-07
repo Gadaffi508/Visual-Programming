@@ -27,6 +27,7 @@ void dal(float x, float y, float boy, float açı)
   float a = PI/180 * açı;
   float uçx = x + cos(a) * boy;
   float uçy = y + sin(a) * boy;
+  println(sin(a));
   line(x,y,uçx,uçy);
   
   if(boy>5)
